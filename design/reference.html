@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lakshya Dhama — Yoga &amp; Strength Classes in Loni, Ghaziabad</title>
+<meta name="description" content="MDNIY-certified yoga instructor and personal trainer in Loni, Ghaziabad. In-person and online yoga and strength classes for weight loss, muscle gain, and flexibility. Book a free trial class."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          sand: { 50: '#FDFBF7', 100: '#FBF9F5', 200: '#F5EFE6', 300: '#EDE4D6', 400: '#DCCDBB', 500: '#C2B19C' },
+          forest: { DEFAULT: '#212B24', 900: '#171E19', 800: '#212B24', 700: '#2E3A32', 600: '#3D4C42' },
+          sage: { DEFAULT: '#4A5D4E', dark: '#3A4B3E', light: '#6F8574', subtle: '#E8ECE9', muted: '#78867B' },
+          terracotta: { DEFAULT: '#C27D60', soft: '#E8C3B3', dark: '#9F5C41' },
+          whatsapp: { DEFAULT: '#1FA855', dark: '#178A45' }
+        },
+        fontFamily: {
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        },
+        boxShadow: {
+          'soft-elevation': '0 20px 40px -15px rgba(33, 43, 36, 0.05)',
+          'card-gentle': '0 10px 30px -10px rgba(33, 43, 36, 0.04)',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body {
+    background-color: #FBF9F5;
+    color: #212B24;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif-title { font-family: 'Playfair Display', Georgia, serif; }
+  .bg-limewash {
+    background-color: #FBF9F5;
+    background-image: radial-gradient(#EFE8DD 0.75px, transparent 0.75px), radial-gradient(#F5EFE6 0.75px, #FBF9F5 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+  }
+  .editorial-arch { border-radius: 260px 260px 24px 24px; }
+  .placeholder-note {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #9F5C41;
+    border: 1px dashed #C27D60;
+    border-radius: 999px;
+    padding: 2px 8px;
+  }
+</style>
+</head>
+<body class="bg-limewash selection:bg-terracotta selection:text-white pb-20 md:pb-0">
+
+<!--
+  Design reference for Lakshya's site. The Next.js build splits these sections into
+  /, /about, /classes, /testimonials, and /contact. Anything marked with
+  .placeholder-note still needs a real value from Lakshya.
+-->
+
+<header class="sticky top-0 z-50 bg-[#FBF9F5]/90 backdrop-blur-md border-b border-[#212B24]/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 md:h-24 flex items-center justify-between">
+    <a aria-label="Lakshya Dhama Yoga home" class="flex items-center gap-3" href="#hero">
+      <svg class="w-[220px] sm:w-[250px] h-auto" fill="none" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28 38C28 27.5 36.5 19 47 19C57.5 19 66 27.5 66 38" stroke="#4A5D4E" stroke-linecap="round" stroke-width="2.5"></path>
+        <circle cx="47" cy="14" fill="#C27D60" r="4"></circle>
+        <path d="M47 38V25" stroke="#4A5D4E" stroke-linecap="round" stroke-width="2"></path>
+        <path d="M38 34C42 30 47 30 47 30" stroke="#4A5D4E" stroke-linecap="round" stroke-width="1.8"></path>
+        <path d="M56 34C52 30 47 30 47 30" stroke="#4A5D4E" stroke-linecap="round" stroke-width="1.8"></path>
+        <text fill="#212B24" font-family="'Playfair Display', serif" font-size="20" font-weight="600" letter-spacing="0.12em" x="78" y="32">LAKSHYA DHAMA</text>
+        <text fill="#78867B" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="500" letter-spacing="0.25em" x="79" y="44">YOGA &amp; STRENGTH</text>
+      </svg>
+    </a>
+
+    <nav aria-label="Primary" class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-forest/80">
+      <a class="hover:text-forest transition-colors" href="#who">Who it's for</a>
+      <a class="hover:text-forest transition-colors" href="#about">About</a>
+      <a class="hover:text-forest transition-colors" href="#classes">Classes</a>
+      <a class="hover:text-forest transition-colors" href="#testimonials">Testimonials</a>
+      <a class="hover:text-forest transition-colors" href="#contact">Contact</a>
+    </nav>
+
+    <a class="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-forest text-sand-50 hover:bg-forest-700 text-xs font-semibold tracking-widest uppercase transition-colors"
+       href="https://wa.me/919971079088?text=Hi%20Lakshya%2C%20I%27d%20like%20to%20book%20a%20free%20trial%20class." target="_blank" rel="noopener">
+      Book free trial
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Home: hero -->
+  <section class="relative pt-12 pb-24 md:pt-16 md:pb-32 overflow-hidden" id="hero">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-7 space-y-8">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-sage-subtle/80 border border-sage/15 text-sage text-xs tracking-wider uppercase font-semibold">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 21s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 7.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Loni, Ghaziabad · In-person &amp; online</span>
+          </div>
+
+          <h1 class="serif-title text-4xl sm:text-5xl md:text-6xl text-forest font-normal leading-[1.12] tracking-tight">
+            Yoga and strength training, <em class="italic text-forest-700">built around your goal.</em>
+          </h1>
+
+          <p class="text-forest/80 text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+            Classical asanas, pranayama, and meditation, combined with practical strength work. For anyone who wants to lose weight, build muscle, improve flexibility, or simply feel better in their body.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a class="px-8 py-4 rounded-full bg-whatsapp text-white hover:bg-whatsapp-dark text-sm font-semibold tracking-wider uppercase transition-colors shadow-soft-elevation flex items-center gap-2.5"
+               href="https://wa.me/919971079088?text=Hi%20Lakshya%2C%20I%27d%20like%20to%20book%20a%20free%20trial%20class." target="_blank" rel="noopener">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+              <span>Book a free trial class</span>
+            </a>
+            <a class="px-7 py-4 rounded-full border border-forest/20 text-forest hover:bg-sand-200/60 text-sm font-medium tracking-wide transition-colors" href="#classes">
+              See classes
+            </a>
+          </div>
+
+          <div class="pt-8 border-t border-[#212B24]/10 grid grid-cols-3 gap-6 max-w-xl">
+            <div>
+              <p class="serif-title text-2xl font-semibold text-forest">7+ Years</p>
+              <p class="text-xs text-sage-muted uppercase tracking-wider font-medium mt-1">Training clients</p>
+            </div>
+            <div>
+              <p class="serif-title text-2xl font-semibold text-forest">MDNIY</p>
+              <p class="text-xs text-sage-muted uppercase tracking-wider font-medium mt-1">Certified yoga</p>
+            </div>
+            <div>
+              <p class="serif-title text-2xl font-semibold text-forest">Yoga + Gym</p>
+              <p class="text-xs text-sage-muted uppercase tracking-wider font-medium mt-1">One plan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="absolute -top-6 -left-6 w-full h-full bg-sand-200 rounded-[280px_280px_30px_30px] -z-10 rotate-[-1.5deg]"></div>
+          <div class="absolute -bottom-4 -right-4 w-full h-full bg-sage-subtle rounded-[280px_280px_30px_30px] -z-10 rotate-[2deg]"></div>
+          <div class="relative w-full max-w-md editorial-arch overflow-hidden shadow-2xl border-4 border-sand-50 bg-sand-300">
+            <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center px-8">
+              <span class="placeholder-note">Real photo needed</span>
+              <span class="text-sm text-forest/60">Lakshya in practice, natural light, portrait crop</span>
+            </div>
+            <img alt="Lakshya Dhama, yoga instructor and personal trainer in Loni, Ghaziabad" class="relative w-full h-[520px] object-cover object-center"
+                 src="images/lakshya-hero.jpg" onerror="this.style.visibility='hidden'"/>
+            <div class="absolute top-6 right-6">
+              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md text-xs font-semibold tracking-wider text-forest shadow-md border border-white/40">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Taking new students
+              </span>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/85 backdrop-blur-md border border-white/60 shadow-lg text-forest">
+              <p class="serif-title text-base text-forest">Your first class is free.</p>
+              <p class="mt-1 text-xs text-sage-muted">Online or in person. Message on WhatsApp to pick a time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home: who it's for -->
+  <section class="py-24 max-w-7xl mx-auto px-6 lg:px-12" id="who">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-semibold tracking-widest text-terracotta uppercase">Who it's for</span>
+      <h2 class="serif-title text-3xl sm:text-4xl md:text-5xl text-forest mt-3 mb-4">Pick your goal. The plan follows.</h2>
+      <p class="text-forest/75 text-base md:text-lg font-light leading-relaxed">
+        Beginners, busy professionals, and gym-goers who want more mobility. Every plan mixes yoga with strength in the ratio your goal needs.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-sand-50 rounded-3xl p-8 border border-forest/10 shadow-card-gentle flex flex-col justify-between">
+        <div>
+          <span class="serif-title text-4xl text-terracotta/80">01</span>
+          <h3 class="serif-title text-2xl text-forest font-semibold mt-4 mb-3">Lose weight, and keep it off</h3>
+          <p class="text-forest/80 text-sm leading-relaxed font-light">
+            Steady, sustainable fat loss through dynamic yoga flows, functional workouts, and simple food guidance. Progress is tracked every week and the plan is adjusted.
+          </p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-forest/10 text-xs font-medium text-sage uppercase tracking-wider">Flows · Functional training · Weekly check-ins</div>
+      </div>
+      <div class="bg-sand-50 rounded-3xl p-8 border border-forest/10 shadow-card-gentle flex flex-col justify-between">
+        <div>
+          <span class="serif-title text-4xl text-sage">02</span>
+          <h3 class="serif-title text-2xl text-forest font-semibold mt-4 mb-3">Build strength and muscle</h3>
+          <p class="text-forest/80 text-sm leading-relaxed font-light">
+            Resistance training with correct form, paired with yoga for recovery so you get stronger without getting stiff or injured.
+          </p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-forest/10 text-xs font-medium text-sage uppercase tracking-wider">Strength · Form correction · Recovery yoga</div>
+      </div>
+      <div class="bg-sand-50 rounded-3xl p-8 border border-forest/10 shadow-card-gentle flex flex-col justify-between">
+        <div>
+          <span class="serif-title text-4xl text-forest/70">03</span>
+          <h3 class="serif-title text-2xl text-forest font-semibold mt-4 mb-3">Flexibility, posture, calm</h3>
+          <p class="text-forest/80 text-sm leading-relaxed font-light">
+            Classical asanas, pranayama, and meditation as taught under MDNIY guidelines. Ease stiffness, correct posture, and breathe better.
+          </p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-forest/10 text-xs font-medium text-sage uppercase tracking-wider">Asana · Pranayama · Meditation</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-24 bg-sand-100 border-t border-[#212B24]/10" id="about">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-5">
+        <div class="relative rounded-3xl overflow-hidden border-4 border-sand-50 shadow-soft-elevation bg-sand-300 aspect-[4/5]">
+          <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center px-8">
+            <span class="placeholder-note">Second real photo</span>
+            <span class="text-sm text-forest/60">Teaching a student, or a strong asana</span>
+          </div>
+          <img alt="Lakshya teaching a yoga class" class="relative w-full h-full object-cover" src="images/lakshya-about.jpg" onerror="this.style.visibility='hidden'"/>
+        </div>
+      </div>
+      <div class="lg:col-span-7 space-y-6">
+        <span class="text-xs font-semibold tracking-widest text-terracotta uppercase">About Lakshya</span>
+        <h2 class="serif-title text-3xl sm:text-4xl md:text-5xl text-forest leading-tight">Seven years in the gym. A yoga practice every day.</h2>
+        <p class="text-forest/80 text-base md:text-lg font-light leading-relaxed">
+          Lakshya has trained clients in Ghaziabad since 2019, first as a gym instructor and personal trainer, then bringing in yoga after completing his certification at the Morarji Desai National Institute of Yoga in 2022.
+        </p>
+        <p class="text-forest/80 text-base font-light leading-relaxed">
+          His classes are disciplined and practical. He corrects posture closely, keeps injury prevention front of mind, and tracks your progress every week. Classes are taught in Hindi or English.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+          <div class="p-5 rounded-2xl bg-sand-50 border border-forest/10">
+            <p class="text-xs uppercase tracking-wider text-sage-muted font-semibold">Certification</p>
+            <p class="serif-title text-lg text-forest mt-1">Yoga Foundation Course</p>
+            <p class="text-sm text-forest/70">MDNIY, Ministry of AYUSH · 2022</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-sand-50 border border-forest/10">
+            <p class="text-xs uppercase tracking-wider text-sage-muted font-semibold">Experience</p>
+            <p class="serif-title text-lg text-forest mt-1">Personal trainer &amp; gym instructor</p>
+            <p class="text-sm text-forest/70">Ghaziabad · 2019 to present</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-sand-50 border border-forest/10">
+            <p class="text-xs uppercase tracking-wider text-sage-muted font-semibold">Background</p>
+            <p class="serif-title text-lg text-forest mt-1">Regional-level athlete</p>
+            <p class="text-sm text-forest/70">Competitive sports · 2015 to 2018</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-sand-50 border border-forest/10">
+            <p class="text-xs uppercase tracking-wider text-sage-muted font-semibold">Education</p>
+            <p class="serif-title text-lg text-forest mt-1">B.A. Programme</p>
+            <p class="text-sm text-forest/70">Delhi University · 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classes -->
+  <section class="py-24 border-t border-[#212B24]/10" id="classes">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs font-semibold tracking-widest text-terracotta uppercase">Classes</span>
+          <h2 class="serif-title text-3xl sm:text-4xl md:text-5xl text-forest mt-2">Online or in person</h2>
+        </div>
+        <p class="text-forest/70 text-sm md:text-base max-w-md font-light">
+          Every new student starts with a free trial class and a short chat about goals, injuries, and schedule.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="bg-sand-50 rounded-3xl p-8 lg:p-10 border border-forest/10 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 rounded-full bg-sand-200 text-forest text-xs font-semibold tracking-wider uppercase">Online</span>
+              <span class="text-xs text-sage-muted font-medium">Live on video call</span>
+            </div>
+            <h3 class="serif-title text-2xl text-forest font-semibold mt-5 mb-2">Online yoga</h3>
+            <p class="text-forest/75 text-sm font-light mb-6">Live group or 1:1 sessions from home. Join from anywhere in India with just a mat.</p>
+            <p class="serif-title text-2xl text-forest font-semibold mb-8">Contact for pricing</p>
+            <ul class="space-y-3.5 text-xs text-forest/80 font-medium pb-8 border-b border-forest/10">
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Live posture corrections on camera</span></li>
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Asana, pranayama, and meditation</span></li>
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Morning and evening batches</span></li>
+            </ul>
+          </div>
+          <a class="mt-8 block text-center w-full py-3.5 rounded-full border border-forest/30 text-forest hover:bg-forest hover:text-sand-50 text-xs font-semibold uppercase tracking-widest transition-colors"
+             href="https://wa.me/919971079088?text=Hi%20Lakshya%2C%20I%27m%20interested%20in%20online%20yoga%20classes." target="_blank" rel="noopener">Ask about online</a>
+        </div>
+
+        <div class="bg-forest text-sand-50 rounded-3xl p-8 lg:p-10 shadow-2xl relative flex flex-col justify-between lg:-translate-y-2 border border-forest-600">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-terracotta text-white text-[11px] font-semibold tracking-widest uppercase shadow whitespace-nowrap">Yoga + strength</div>
+          <div>
+            <div class="flex justify-between items-start mt-2">
+              <span class="px-3 py-1 rounded-full bg-forest-700 text-sand-200 text-xs font-semibold tracking-wider uppercase">Personal training</span>
+              <span class="text-xs text-sand-300 font-medium">1:1</span>
+            </div>
+            <h3 class="serif-title text-2xl text-sand-50 font-semibold mt-5 mb-2">Hybrid personal plan</h3>
+            <p class="text-sand-300 text-sm font-light mb-6">A custom plan blending resistance training with yoga recovery, built for weight loss, muscle gain, or both.</p>
+            <p class="serif-title text-2xl text-sand-50 font-semibold mb-8">Contact for pricing</p>
+            <ul class="space-y-3.5 text-xs text-sand-200 font-medium pb-8 border-b border-forest-700">
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Weekly progress tracking</span></li>
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Basic nutrition guidance</span></li>
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-terracotta flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Online or in person</span></li>
+            </ul>
+          </div>
+          <a class="mt-8 block text-center w-full py-3.5 rounded-full bg-terracotta text-white hover:bg-terracotta-dark text-xs font-semibold uppercase tracking-widest transition-colors shadow"
+             href="https://wa.me/919971079088?text=Hi%20Lakshya%2C%20I%27m%20interested%20in%20a%20personal%20training%20plan." target="_blank" rel="noopener">Ask about a personal plan</a>
+        </div>
+
+        <div class="bg-sand-50 rounded-3xl p-8 lg:p-10 border border-forest/10 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start">
+              <span class="px-3 py-1 rounded-full bg-sand-200 text-forest text-xs font-semibold tracking-wider uppercase">In person</span>
+              <span class="text-xs text-sage-muted font-medium">Loni, Ghaziabad</span>
+            </div>
+            <h3 class="serif-title text-2xl text-forest font-semibold mt-5 mb-2">Group yoga classes</h3>
+            <p class="text-forest/75 text-sm font-light mb-6">Small group classes in Loni. Home visits nearby can be arranged.</p>
+            <p class="serif-title text-2xl text-forest font-semibold mb-8">Contact for pricing</p>
+            <ul class="space-y-3.5 text-xs text-forest/80 font-medium pb-8 border-b border-forest/10">
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Hands-on posture correction</span></li>
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Beginner-friendly pace</span></li>
+              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-sage flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>Hindi or English</span></li>
+            </ul>
+          </div>
+          <a class="mt-8 block text-center w-full py-3.5 rounded-full border border-forest/30 text-forest hover:bg-forest hover:text-sand-50 text-xs font-semibold uppercase tracking-widest transition-colors"
+             href="https://wa.me/919971079088?text=Hi%20Lakshya%2C%20I%27m%20interested%20in%20in-person%20yoga%20classes%20in%20Loni." target="_blank" rel="noopener">Ask about in-person</a>
+        </div>
+      </div>
+
+      <div class="mt-16 rounded-3xl bg-sand-50 border border-forest/10 p-8 lg:p-10">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <h3 class="serif-title text-2xl text-forest">Weekly schedule</h3>
+          <span class="placeholder-note">Times to confirm with Lakshya</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+          <div class="p-5 rounded-2xl bg-sand-100 border border-forest/10">
+            <p class="text-xs uppercase tracking-wider text-sage-muted font-semibold">Mon – Sat · Morning</p>
+            <p class="serif-title text-xl text-forest mt-1">6:00 – 7:00 AM</p>
+            <p class="text-forest/70 mt-1">Group yoga · In person</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-sand-100 border border-forest/10">
+            <p class="text-xs uppercase tracking-wider text-sage-muted font-semibold">Mon – Sat · Morning</p>
+            <p class="serif-title text-xl text-forest mt-1">7:30 – 8:30 AM</p>
+            <p class="text-forest/70 mt-1">Online yoga · Live</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-sand-100 border border-forest/10">
+            <p class="text-xs uppercase tracking-wider text-sage-muted font-semibold">Mon – Sat · Evening</p>
+            <p class="serif-title text-xl text-forest mt-1">6:30 – 7:30 PM</p>
+            <p class="text-forest/70 mt-1">Online yoga · Live</p>
+          </div>
+        </div>
+        <p class="text-xs text-forest/60 mt-6">Personal training slots are fixed one to one. Message on WhatsApp to find a time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-sand-100/70 border-t border-[#212B24]/10" id="testimonials">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-widest text-terracotta uppercase">Students</span>
+        <h2 class="serif-title text-3xl sm:text-4xl text-forest mt-2">In their words</h2>
+        <p class="mt-4"><span class="placeholder-note">Replace with 3–5 real quotes, with permission</span></p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <figure class="p-8 rounded-2xl bg-sand-50 border border-forest/10 flex flex-col justify-between shadow-card-gentle">
+          <blockquote class="serif-title text-base sm:text-lg text-forest italic leading-relaxed mb-6">“A short quote about weight loss, consistency, or how the plan was adjusted week by week.”</blockquote>
+          <figcaption>
+            <p class="text-sm font-semibold text-forest">Student name</p>
+            <p class="text-xs text-sage-muted tracking-wide">Area · Class type</p>
+          </figcaption>
+        </figure>
+        <figure class="p-8 rounded-2xl bg-sand-50 border border-forest/10 flex flex-col justify-between shadow-card-gentle">
+          <blockquote class="serif-title text-base sm:text-lg text-forest italic leading-relaxed mb-6">“A short quote about strength gains, form correction, or avoiding injury.”</blockquote>
+          <figcaption>
+            <p class="text-sm font-semibold text-forest">Student name</p>
+            <p class="text-xs text-sage-muted tracking-wide">Area · Class type</p>
+          </figcaption>
+        </figure>
+        <figure class="p-8 rounded-2xl bg-sand-50 border border-forest/10 flex flex-col justify-between shadow-card-gentle">
+          <blockquote class="serif-title text-base sm:text-lg text-forest italic leading-relaxed mb-6">“A short quote about flexibility, back pain, stress, or sleep after regular yoga.”</blockquote>
+          <figcaption>
+            <p class="text-sm font-semibold text-forest">Student name</p>
+            <p class="text-xs text-sage-muted tracking-wide">Area · Class type</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-24 max-w-7xl mx-auto px-6 lg:px-12" id="contact">
+    <div class="bg-sand-50 rounded-3xl border border-forest/15 p-8 sm:p-12 lg:p-16 shadow-soft-elevation">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-semibold tracking-widest text-terracotta uppercase">Contact</span>
+          <h2 class="serif-title text-3xl sm:text-4xl text-forest leading-tight">Book your free trial class.</h2>
+          <p class="text-forest/75 text-sm sm:text-base font-light leading-relaxed">
+            WhatsApp is the fastest way to reach Lakshya. Send a message with your goal and preferred time, and he will reply with a slot.
+          </p>
+
+          <div class="flex flex-col sm:flex-row lg:flex-col gap-3 pt-2">
+            <a class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-full bg-whatsapp text-white hover:bg-whatsapp-dark text-sm font-semibold tracking-wide transition-colors"
+               href="https://wa.me/919971079088?text=Hi%20Lakshya%2C%20I%27d%20like%20to%20book%20a%20free%20trial%20class." target="_blank" rel="noopener">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+              Chat on WhatsApp
+            </a>
+            <a class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-full border border-forest/25 text-forest hover:bg-sand-200/60 text-sm font-semibold tracking-wide transition-colors" href="tel:+919971079088">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h3.28a1 1 0 0 1 .95.68l1.5 4.49a1 1 0 0 1-.5 1.21l-2.26 1.13a11.04 11.04 0 0 0 5.52 5.52l1.13-2.26a1 1 0 0 1 1.21-.5l4.49 1.5a1 1 0 0 1 .68.95V19a2 2 0 0 1-2 2h-1C9.72 21 3 14.28 3 6V5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Call +91 99710 79088
+            </a>
+          </div>
+
+          <div class="pt-6 space-y-4 text-xs font-medium text-forest/80">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-sand-200 flex items-center justify-center text-forest">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+              </span>
+              <span>Behta Hajipur, Loni, Ghaziabad, Uttar Pradesh</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-sand-200 flex items-center justify-center text-forest">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+              </span>
+              <span>lakshaydh2017@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <p class="text-sm text-forest/70 mb-6">Prefer a form? Leave your details and Lakshya will call or WhatsApp you back.</p>
+          <form class="space-y-6" id="enquiryForm" novalidate>
+            <div>
+              <span class="block text-xs uppercase tracking-wider font-semibold text-forest mb-2">I'm interested in</span>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                <label class="cursor-pointer">
+                  <input checked class="peer sr-only" name="class_type" type="radio" value="online"/>
+                  <div class="p-3 text-center rounded-xl border border-forest/15 peer-checked:border-forest peer-checked:bg-forest peer-checked:text-sand-50 text-xs font-medium text-forest hover:bg-sand-100 transition-colors">Online yoga</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="peer sr-only" name="class_type" type="radio" value="in_person"/>
+                  <div class="p-3 text-center rounded-xl border border-forest/15 peer-checked:border-forest peer-checked:bg-forest peer-checked:text-sand-50 text-xs font-medium text-forest hover:bg-sand-100 transition-colors">In-person yoga</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="peer sr-only" name="class_type" type="radio" value="personal"/>
+                  <div class="p-3 text-center rounded-xl border border-forest/15 peer-checked:border-forest peer-checked:bg-forest peer-checked:text-sand-50 text-xs font-medium text-forest hover:bg-sand-100 transition-colors">Personal training</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-semibold text-forest mb-1.5" for="fullName">Name</label>
+                <input class="w-full rounded-xl border-forest/20 bg-white/70 px-4 py-3 text-sm focus:border-forest focus:ring-forest text-forest placeholder:text-forest/30" id="fullName" name="name" placeholder="Your name" required type="text" autocomplete="name"/>
+              </div>
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-semibold text-forest mb-1.5" for="phone">Phone / WhatsApp</label>
+                <input class="w-full rounded-xl border-forest/20 bg-white/70 px-4 py-3 text-sm focus:border-forest focus:ring-forest text-forest placeholder:text-forest/30" id="phone" name="phone" placeholder="98xxx xxxxx" required type="tel" inputmode="tel" autocomplete="tel"/>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-semibold text-forest mb-1.5" for="goal">Main goal</label>
+                <select class="w-full rounded-xl border-forest/20 bg-white/70 px-4 py-3 text-sm focus:border-forest focus:ring-forest text-forest" id="goal" name="goal">
+                  <option>Weight loss</option>
+                  <option>Muscle gain / strength</option>
+                  <option>Flexibility &amp; posture</option>
+                  <option>Stress &amp; general wellness</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-semibold text-forest mb-1.5" for="timeFrame">Preferred time</label>
+                <select class="w-full rounded-xl border-forest/20 bg-white/70 px-4 py-3 text-sm focus:border-forest focus:ring-forest text-forest" id="timeFrame" name="preferred_time">
+                  <option>Morning</option>
+                  <option>Evening</option>
+                  <option>Weekend</option>
+                  <option>Flexible</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-semibold text-forest mb-1.5" for="message">Anything Lakshya should know? <span class="normal-case tracking-normal font-normal text-forest/50">(optional)</span></label>
+              <textarea class="w-full rounded-xl border-forest/20 bg-white/70 px-4 py-3 text-sm focus:border-forest focus:ring-forest text-forest placeholder:text-forest/30" id="message" name="message" placeholder="Injuries, health conditions, or experience level" rows="3"></textarea>
+            </div>
+
+            <input type="text" name="company" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true"/>
+
+            <button class="w-full py-4 rounded-full bg-forest text-sand-50 hover:bg-forest-700 text-xs font-bold uppercase tracking-widest transition-colors shadow-md" type="submit">Send enquiry</button>
+            <p class="hidden text-sm text-sage-dark bg-sage-subtle rounded-xl px-4 py-3" id="enquiryDone" role="status">
+              Thanks. Lakshya will get back to you within a day. For a faster reply,
+              <a class="underline font-semibold" href="https://wa.me/919971079088" target="_blank" rel="noopener">message him on WhatsApp</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-forest text-sand-100 pt-16 pb-12 border-t border-forest-700">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-forest-700">
+      <div class="md:col-span-5 space-y-4">
+        <div class="flex items-center gap-3">
+          <svg fill="none" height="36" viewBox="0 0 60 60" width="36" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 40C12 28.5 21 19 32 19C43 19 52 28.5 52 40" stroke="#E8C3B3" stroke-linecap="round" stroke-width="2.5"></path>
+            <circle cx="32" cy="14" fill="#C27D60" r="4.5"></circle>
+            <path d="M32 40V26" stroke="#E8C3B3" stroke-linecap="round" stroke-width="2"></path>
+          </svg>
+          <span class="serif-title text-xl tracking-wider text-sand-50 font-semibold">LAKSHYA DHAMA</span>
+        </div>
+        <p class="text-xs text-sand-300 leading-relaxed font-light pr-6">
+          MDNIY-certified yoga instructor and personal trainer. Yoga and strength classes in Loni, Ghaziabad, and online across India.
+        </p>
+      </div>
+      <div class="md:col-span-3 space-y-3">
+        <p class="text-xs uppercase tracking-widest font-semibold text-terracotta">Classes</p>
+        <ul class="space-y-2 text-xs text-sand-300 font-light">
+          <li><a class="hover:text-white transition-colors" href="#classes">Online yoga</a></li>
+          <li><a class="hover:text-white transition-colors" href="#classes">In-person group yoga</a></li>
+          <li><a class="hover:text-white transition-colors" href="#classes">Hybrid personal training</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4 space-y-3">
+        <p class="text-xs uppercase tracking-widest font-semibold text-terracotta">Reach Lakshya</p>
+        <p class="text-xs text-sand-300 leading-relaxed font-light">
+          Behta Hajipur, Loni<br/>
+          Ghaziabad, Uttar Pradesh<br/>
+          <a class="hover:text-white" href="tel:+919971079088">+91 99710 79088</a><br/>
+          <a class="hover:text-white" href="mailto:lakshaydh2017@gmail.com">lakshaydh2017@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-sand-300/70 gap-4 font-light">
+      <p>© 2026 Lakshya Dhama. All rights reserved.</p>
+      <div class="flex items-center gap-6 text-sand-300">
+        <a class="hover:text-sand-50 transition-colors" href="#">Instagram <span class="placeholder-note ml-1">add link</span></a>
+        <a class="hover:text-sand-50 transition-colors" href="#">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile action bar -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-50 grid grid-cols-2 gap-2 p-3 bg-[#FBF9F5]/95 backdrop-blur-md border-t border-forest/10">
+  <a class="flex items-center justify-center gap-2 py-3 rounded-full bg-whatsapp text-white text-sm font-semibold"
+     href="https://wa.me/919971079088?text=Hi%20Lakshya%2C%20I%27d%20like%20to%20book%20a%20free%20trial%20class." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="flex items-center justify-center gap-2 py-3 rounded-full border border-forest/25 text-forest text-sm font-semibold" href="tel:+919971079088">Call</a>
+</div>
+
+<script>
+  document.getElementById('enquiryForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (!this.reportValidity()) return;
+    document.getElementById('enquiryDone').classList.remove('hidden');
+    this.querySelector('button[type="submit"]').disabled = true;
+  });
+</script>
+</body>
+</html>

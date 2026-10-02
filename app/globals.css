@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #fbf9f5;
+  --color-sand-200: #f5efe6;
+  --color-sand-300: #ede4d6;
+  --color-sand-400: #dccdbb;
+  --color-sand-500: #c2b19c;
+
+  --color-forest: #212b24;
+  --color-forest-900: #171e19;
+  --color-forest-800: #212b24;
+  --color-forest-700: #2e3a32;
+  --color-forest-600: #3d4c42;
+
+  --color-sage: #4a5d4e;
+  --color-sage-dark: #3a4b3e;
+  --color-sage-light: #6f8574;
+  --color-sage-subtle: #e8ece9;
+  --color-sage-muted: #78867b;
+
+  --color-terracotta: #c27d60;
+  --color-terracotta-soft: #e8c3b3;
+  --color-terracotta-dark: #9f5c41;
+
+  --color-whatsapp: #1fa855;
+  --color-whatsapp-dark: #178a45;
+
+  --font-sans: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+
+  --shadow-soft-elevation: 0 20px 40px -15px rgba(33, 43, 36, 0.05);
+  --shadow-card-gentle: 0 10px 30px -10px rgba(33, 43, 36, 0.04);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf9f5;
+  color: #212b24;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #c27d60;
+  color: white;
+}
+
+.bg-limewash {
+  background-color: #fbf9f5;
+  background-image:
+    radial-gradient(#efe8dd 0.75px, transparent 0.75px),
+    radial-gradient(#f5efe6 0.75px, #fbf9f5 0.75px);
+  background-size: 30px 30px;
+  background-position:
+    0 0,
+    15px 15px;
+}
+
+.editorial-arch {
+  border-radius: 260px 260px 24px 24px;
+}
+
+.placeholder-note {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9f5c41;
+  border: 1px dashed #c27d60;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
