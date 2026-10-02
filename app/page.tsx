@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ClassCards } from "@/components/ClassCards";
-import { PlaceholderNote } from "@/components/PlaceholderNote";
+import { LocalBusinessJsonLd } from "@/components/LocalBusinessJsonLd";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { audience, trustStats } from "@/lib/content";
 import { site } from "@/lib/site";
@@ -14,6 +15,7 @@ const numberToneClass = {
 export default function HomePage() {
   return (
     <>
+      <LocalBusinessJsonLd />
       <section className="relative pt-12 pb-24 md:pt-16 md:pb-32 overflow-hidden" id="hero">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -74,13 +76,16 @@ export default function HomePage() {
             <div className="lg:col-span-5 relative flex justify-center">
               <div className="absolute -top-6 -left-6 w-full h-full bg-sand-200 rounded-[280px_280px_30px_30px] -z-10 rotate-[-1.5deg]" />
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-sage-subtle rounded-[280px_280px_30px_30px] -z-10 rotate-[2deg]" />
-              <div className="relative w-full max-w-md editorial-arch overflow-hidden shadow-2xl border-4 border-sand-50 bg-sand-300 min-h-[520px]">
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-center px-8">
-                  <PlaceholderNote>Real photo needed</PlaceholderNote>
-                  <span className="text-sm text-forest/60">
-                    Lakshya in practice, natural light, portrait crop
-                  </span>
-                </div>
+              <div className="relative w-full max-w-md editorial-arch overflow-hidden shadow-2xl border-4 border-sand-50 bg-sand-300">
+                <Image
+                  src="/images/lakshya-hero.jpg"
+                  alt="Lakshya Dhama, yoga instructor and personal trainer in Loni, Ghaziabad"
+                  width={720}
+                  height={960}
+                  priority
+                  className="relative w-full h-[520px] object-cover object-center"
+                  sizes="(max-width: 1024px) 90vw, 420px"
+                />
                 <div className="absolute top-6 right-6">
                   <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md text-xs font-semibold tracking-wider text-forest shadow-md border border-white/40">
                     <span className="w-2 h-2 rounded-full bg-emerald-500" />

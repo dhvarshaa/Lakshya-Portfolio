@@ -6,6 +6,10 @@ export const site = {
     "MDNIY-certified yoga instructor and personal trainer in Loni, Ghaziabad. In-person and online yoga and strength classes for weight loss, muscle gain, and flexibility. Book a free trial class.",
   area: "Loni, Ghaziabad",
   addressLine: "Behta Hajipur, Loni, Ghaziabad, Uttar Pradesh",
+  locality: "Loni",
+  region: "Uttar Pradesh",
+  postalCode: "201102",
+  country: "IN",
   phoneDisplay: "+91 99710 79088",
   phoneE164: "+919971079088",
   phoneWhatsApp: "919971079088",
@@ -13,6 +17,14 @@ export const site = {
   instagramUrl: null as string | null,
   trialMessage: "Hi Lakshya, I'd like to book a free trial class.",
 } as const;
+
+/** Canonical site origin. Set NEXT_PUBLIC_SITE_URL in production (e.g. https://lakshyadhama.in). */
+export function getSiteUrl(): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+  if (fromEnv) return fromEnv;
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  return "http://localhost:3000";
+}
 
 export function whatsappUrl(message: string = site.trialMessage): string {
   return `https://wa.me/${site.phoneWhatsApp}?text=${encodeURIComponent(message)}`;

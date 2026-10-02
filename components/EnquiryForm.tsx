@@ -3,21 +3,56 @@
 import { FormEvent, useState } from "react";
 import { whatsappUrl } from "@/lib/site";
 
-type Status = "idle" | "done";
+type Status = "idle" | "loading" | "done" | "error";
 
 export function EnquiryForm() {
   const [status, setStatus] = useState<Status>("idle");
+  const [error, setError] = useState<string | null>(null);
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     if (!form.reportValidity()) return;
 
-    const honeypot = new FormData(form).get("company");
-    if (typeof honeypot === "string" && honeypot.trim()) return;
+    setStatus("loading");
+    setError(null);
 
-    // Day 2 wires this to /api/enquiry + Resend.
-    setStatus("done");
+    const formData = new FormData(form);
+    const payload = {
+      name: String(formData.get("name") ?? ""),
+      phone: String(formData.get("phone") ?? ""),
+      class_type: String(formData.get("class_type") ?? "online"),
+      goal: String(formData.get("goal") ?? ""),
+      preferred_time: String(formData.get("preferred_time") ?? ""),
+      message: String(formData.get("message") ?? ""),
+      company: String(formData.get("company") ?? ""),
+    };
+
+    try {
+      const response = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = (await response.json().catch(() => ({}))) as {
+        error?: string;
+      };
+
+      if (!response.ok) {
+        setStatus("error");
+        setError(
+          result.error ??
+            "Something went wrong. Please message on WhatsApp instead.",
+        );
+        return;
+      }
+
+      setStatus("done");
+      form.reset();
+    } catch {
+      setStatus("error");
+      setError("Network error. Please message on WhatsApp instead.");
+    }
   }
 
   return (
@@ -64,6 +99,7 @@ export function EnquiryForm() {
             required
             type="text"
             autoComplete="name"
+            disabled={status === "loading"}
           />
         </div>
         <div>
@@ -82,6 +118,7 @@ export function EnquiryForm() {
             type="tel"
             inputMode="tel"
             autoComplete="tel"
+            disabled={status === "loading"}
           />
         </div>
       </div>
@@ -99,6 +136,7 @@ export function EnquiryForm() {
             id="goal"
             name="goal"
             defaultValue="Weight loss"
+            disabled={status === "loading"}
           >
             <option>Weight loss</option>
             <option>Muscle gain / strength</option>
@@ -119,6 +157,7 @@ export function EnquiryForm() {
             id="timeFrame"
             name="preferred_time"
             defaultValue="Morning"
+            disabled={status === "loading"}
           >
             <option>Morning</option>
             <option>Evening</option>
@@ -144,6 +183,7 @@ export function EnquiryForm() {
           name="message"
           placeholder="Injuries, health conditions, or experience level"
           rows={3}
+          disabled={status === "loading"}
         />
       </div>
 
@@ -159,10 +199,27 @@ export function EnquiryForm() {
       <button
         className="w-full py-4 rounded-full bg-forest text-sand-50 hover:bg-forest-700 text-xs font-bold uppercase tracking-widest transition-colors shadow-md disabled:opacity-60"
         type="submit"
-        disabled={status === "done"}
+        disabled={status === "loading" || status === "done"}
       >
-        Send enquiry
+        {status === "loading" ? "Sending…" : "Send enquiry"}
       </button>
+
+      {status === "error" && error ? (
+        <p
+          className="text-sm text-terracotta-dark bg-terracotta-soft/40 rounded-xl px-4 py-3"
+          role="alert"
+        >
+          {error}{" "}
+          <a
+            className="underline font-semibold"
+            href={whatsappUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open WhatsApp
+          </a>
+        </p>
+      ) : null}
 
       {status === "done" ? (
         <p
@@ -178,10 +235,7 @@ export function EnquiryForm() {
           >
             message him on WhatsApp
           </a>
-          .{" "}
-          <span className="text-forest/50">
-            (Email delivery lands on Day 2.)
-          </span>
+          .
         </p>
       ) : null}
     </form>

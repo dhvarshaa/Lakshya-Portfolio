@@ -4,9 +4,13 @@ import { PlaceholderNote } from "@/components/PlaceholderNote";
 import { schedule } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Classes",
+  title: {
+    absolute:
+      "Yoga Classes Online & In Person in Loni, Ghaziabad · Lakshya Dhama",
+  },
   description:
     "Online yoga, in-person group classes in Loni, Ghaziabad, and hybrid personal training. Book a free trial with Lakshya Dhama.",
+  alternates: { canonical: "/classes" },
 };
 
 export default function ClassesPage() {

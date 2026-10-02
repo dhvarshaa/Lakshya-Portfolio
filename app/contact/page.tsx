@@ -5,9 +5,12 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: {
+    absolute: "Book a Free Trial Class in Loni, Ghaziabad · Lakshya Dhama",
+  },
   description:
     "Book a free trial yoga or strength class with Lakshya Dhama in Loni, Ghaziabad. WhatsApp, call, or send an enquiry.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

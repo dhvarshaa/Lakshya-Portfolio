@@ -4,9 +4,12 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { credentials } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: {
+    absolute: "About Lakshya Dhama · Yoga Instructor in Loni, Ghaziabad",
+  },
   description:
     "Meet Lakshya Dhama — MDNIY-certified yoga instructor and personal trainer in Loni, Ghaziabad, with 7+ years of gym and wellness experience.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

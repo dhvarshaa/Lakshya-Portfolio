@@ -4,9 +4,12 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { testimonials } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Testimonials",
+  title: {
+    absolute: "Student Testimonials · Lakshya Dhama · Loni, Ghaziabad",
+  },
   description:
     "What students say about yoga and strength training with Lakshya Dhama in Loni, Ghaziabad.",
+  alternates: { canonical: "/testimonials" },
 };
 
 export default function TestimonialsPage() {
