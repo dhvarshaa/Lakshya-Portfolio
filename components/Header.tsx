@@ -6,12 +6,12 @@ import { WhatsAppButton } from "./WhatsAppButton";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[#FBF9F5]/90 backdrop-blur-md border-b border-[#212B24]/5">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 md:h-24 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 min-h-20 md:min-h-24 py-3 flex flex-wrap items-center justify-between gap-4">
         <Logo />
 
         <nav
           aria-label="Primary"
-          className="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-forest/80"
+          className="hidden md:flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium tracking-wide text-forest/80"
         >
           {nav.map((item) => (
             <Link

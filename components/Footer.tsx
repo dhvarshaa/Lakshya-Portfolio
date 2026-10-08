@@ -33,6 +33,16 @@ export function Footer() {
                   Hybrid personal training
                 </Link>
               </li>
+              <li>
+                <Link className="hover:text-white transition-colors" href="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-white transition-colors" href="/course">
+                  Course
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="md:col-span-4 space-y-3">
