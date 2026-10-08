@@ -51,7 +51,7 @@ export type Course = {
 
 export const trustStats = [
   { value: "7+ Years", label: "Training clients" },
-  { value: "MDNIY", label: "Certified yoga" },
+  { value: "Certified", label: "Yoga instructor" },
   { value: "Yoga + Gym", label: "One plan" },
 ] as const;
 
@@ -74,7 +74,7 @@ export const audience: AudienceCard[] = [
     number: "03",
     numberTone: "forest",
     title: "Flexibility, posture, calm",
-    body: "Classical asanas, pranayama, and meditation as taught under MDNIY guidelines. Ease stiffness, correct posture, and breathe better.",
+    body: "Classical asanas, pranayama, and meditation. Ease stiffness, correct posture, and breathe better.",
     footer: "Asana · Pranayama · Meditation",
   },
 ];
@@ -83,12 +83,12 @@ export const credentials: Credential[] = [
   {
     label: "Certification",
     title: "Yoga Foundation Course",
-    detail: "MDNIY, Ministry of AYUSH · 2022",
+    detail: "Completed · 2022",
   },
   {
     label: "Experience",
     title: "Personal trainer & gym instructor",
-    detail: "Ghaziabad · 2019 to present",
+    detail: "Delhi | NCR · 2019 to present",
   },
   {
     label: "Background",
@@ -130,7 +130,7 @@ export const classes: ClassOffering[] = [
     features: [
       "Weekly progress tracking",
       "Basic nutrition guidance",
-      "Online or in person",
+      "Online and In-Person",
     ],
     ctaLabel: "Ask about a personal plan",
     whatsappMessage: "Hi Lakshya, I'm interested in a personal training plan.",
@@ -140,10 +140,10 @@ export const classes: ClassOffering[] = [
   {
     id: "in-person",
     badge: "In person",
-    meta: "Loni, Ghaziabad",
+    meta: "Delhi | NCR",
     title: "Group yoga classes",
     description:
-      "Small group classes in Loni. Home visits nearby can be arranged.",
+      "Small group classes in Delhi | NCR. Home visits nearby can be arranged.",
     pricing: "Contact for pricing",
     features: [
       "Hands-on posture correction",
@@ -152,7 +152,7 @@ export const classes: ClassOffering[] = [
     ],
     ctaLabel: "Ask about in-person",
     whatsappMessage:
-      "Hi Lakshya, I'm interested in in-person yoga classes in Loni.",
+      "Hi Lakshya, I'm interested in in-person yoga classes in Delhi | NCR.",
   },
 ];
 

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { Logo } from "./Logo";
 import { PlaceholderNote } from "./PlaceholderNote";
 
 export function Footer() {
@@ -9,10 +8,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-forest-700">
           <div className="md:col-span-5 space-y-4">
-            <Logo variant="footer" />
             <p className="text-xs text-sand-300 leading-relaxed font-light pr-6">
-              MDNIY-certified yoga instructor and personal trainer. Yoga and
-              strength classes in Loni, Ghaziabad, and online across India.
+              {site.name} {site.byline}. Yoga and strength classes in{" "}
+              {site.area}, and online across India.
             </p>
           </div>
           <div className="md:col-span-3 space-y-3">
@@ -42,9 +40,7 @@ export function Footer() {
               Reach Lakshya
             </p>
             <p className="text-xs text-sand-300 leading-relaxed font-light">
-              Behta Hajipur, Loni
-              <br />
-              Ghaziabad, Uttar Pradesh
+              {site.addressLine}
               <br />
               <a className="hover:text-white" href={`tel:${site.phoneE164}`}>
                 {site.phoneDisplay}
@@ -57,7 +53,7 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-sand-300/70 gap-4 font-light">
-          <p>© {new Date().getFullYear()} Lakshya Dhama. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
           <div className="flex items-center gap-6 text-sand-300">
             {site.instagramUrl ? (
               <a

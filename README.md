@@ -1,6 +1,6 @@
-# Lakshya Dhama — Yoga & Strength
+# Lakshya Studios — by Lakshya Dhama
 
-Marketing site for Lakshya Dhama, MDNIY-certified yoga instructor and personal trainer in Loni, Ghaziabad.
+Marketing site for Lakshya Studios by Lakshya Dhama, a yoga instructor and personal trainer in Delhi | NCR.
 
 ## Stack
 

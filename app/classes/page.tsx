@@ -6,10 +6,10 @@ import { schedule } from "@/lib/content";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Yoga Classes Online & In Person in Loni, Ghaziabad · Lakshya Dhama",
+      "Yoga Classes Online & In Person in Delhi | NCR · Lakshya Studios",
   },
   description:
-    "Online yoga, in-person group classes in Loni, Ghaziabad, and hybrid personal training. Book a free trial with Lakshya Dhama.",
+    "Online yoga, in-person group classes in Delhi | NCR, and hybrid personal training at Lakshya Studios. Book a free trial with Lakshya Dhama.",
   alternates: { canonical: "/classes" },
 };
 
@@ -17,7 +17,7 @@ export default function ClassesPage() {
   const hasUnconfirmed = schedule.some((slot) => !slot.confirmed);
 
   return (
-    <section className="py-24 border-b border-[#212B24]/10">
+    <section className="py-12 border-b border-[#212B24]/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
@@ -25,7 +25,7 @@ export default function ClassesPage() {
               Classes
             </span>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-forest mt-2">
-              Online or in person
+              Online and In-Person
             </h1>
           </div>
           <p className="text-forest/70 text-sm md:text-base max-w-md font-light">

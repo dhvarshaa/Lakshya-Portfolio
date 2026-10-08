@@ -13,7 +13,7 @@ export default function CoursesPage() {
   if (courses.length === 0) notFound();
 
   return (
-    <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="py-12 max-w-7xl mx-auto px-6 lg:px-12">
       <h1 className="font-serif text-4xl text-forest mb-8">Courses</h1>
       <ul className="space-y-4">
         {courses.map((course) => (

@@ -58,7 +58,7 @@ export default function OpenGraphImage() {
               fontWeight: 400,
             }}
           >
-            Yoga &amp; Strength · Free trial class
+            {`${site.byline} · Free trial class`}
           </div>
         </div>
         <div
@@ -71,7 +71,7 @@ export default function OpenGraphImage() {
             color: "#78867B",
           }}
         >
-          <span>MDNIY certified · Online &amp; in person</span>
+          <span>Online and In-Person</span>
           <span style={{ color: "#212B24", fontWeight: 600 }}>
             Book on WhatsApp
           </span>

@@ -23,7 +23,7 @@ export default async function CoursePage({ params }: Props) {
   if (!course) notFound();
 
   return (
-    <section className="py-24 max-w-3xl mx-auto px-6 lg:px-12">
+    <section className="py-12 max-w-3xl mx-auto px-6 lg:px-12">
       <h1 className="font-serif text-4xl text-forest mb-4">{course.title}</h1>
       <p className="text-forest/75 font-light mb-8">{course.summary}</p>
       <p className="font-serif text-2xl text-forest mb-8">

@@ -5,16 +5,16 @@ import { credentials } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About Lakshya Dhama · Yoga Instructor in Loni, Ghaziabad",
+    absolute: "About Lakshya Dhama · Lakshya Studios · Delhi | NCR",
   },
   description:
-    "Meet Lakshya Dhama — MDNIY-certified yoga instructor and personal trainer in Loni, Ghaziabad, with 7+ years of gym and wellness experience.",
+    "Meet Lakshya Dhama — yoga instructor and personal trainer at Lakshya Studios in Delhi | NCR, with 7+ years of gym and wellness experience.",
   alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
   return (
-    <section className="py-24 bg-sand-100 border-b border-[#212B24]/10">
+    <section className="py-12 bg-sand-100 border-b border-[#212B24]/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <div className="lg:col-span-5">
           <div className="relative rounded-3xl overflow-hidden border-4 border-sand-50 shadow-soft-elevation bg-sand-300 aspect-[4/5]">
@@ -34,10 +34,9 @@ export default function AboutPage() {
             Seven years in the gym. A yoga practice every day.
           </h1>
           <p className="text-forest/80 text-base md:text-lg font-light leading-relaxed">
-            Lakshya has trained clients in Ghaziabad since 2019, first as a gym
-            instructor and personal trainer, then bringing in yoga after
-            completing his certification at the Morarji Desai National Institute
-            of Yoga in 2022.
+            Lakshya has trained clients in Delhi | NCR since 2019, first as a gym
+            instructor and personal trainer, then bringing yoga into his
+            classes in 2022.
           </p>
           <p className="text-forest/80 text-base font-light leading-relaxed">
             His classes are disciplined and practical. He corrects posture

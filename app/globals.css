@@ -27,8 +27,8 @@
   --color-whatsapp: #1fa855;
   --color-whatsapp-dark: #178a45;
 
-  --font-sans: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
-  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-poppins), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-poppins), system-ui, -apple-system, sans-serif;
 
   --shadow-soft-elevation: 0 20px 40px -15px rgba(33, 43, 36, 0.05);
   --shadow-card-gentle: 0 10px 30px -10px rgba(33, 43, 36, 0.04);

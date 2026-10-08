@@ -76,29 +76,31 @@ export default function HomePage() {
             <div className="lg:col-span-5 relative flex justify-center">
               <div className="absolute -top-6 -left-6 w-full h-full bg-sand-200 rounded-[280px_280px_30px_30px] -z-10 rotate-[-1.5deg]" />
               <div className="absolute -bottom-4 -right-4 w-full h-full bg-sage-subtle rounded-[280px_280px_30px_30px] -z-10 rotate-[2deg]" />
-              <div className="relative w-full max-w-md editorial-arch overflow-hidden shadow-2xl border-4 border-sand-50 bg-sand-300">
+              <div className="relative isolate w-full max-w-md">
+                <div className="editorial-arch overflow-hidden shadow-2xl border-4 border-sand-50 bg-sand-300">
                 <Image
                   src="/images/lakshya-hero.jpg"
-                  alt="Lakshya Dhama, yoga instructor and personal trainer in Loni, Ghaziabad"
+                  alt={`${site.founder}, yoga instructor at ${site.name} in ${site.area}`}
                   width={720}
                   height={960}
                   priority
                   className="relative w-full h-[520px] object-cover object-center"
                   sizes="(max-width: 1024px) 90vw, 420px"
                 />
-                <div className="absolute top-6 right-6">
-                  <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md text-xs font-semibold tracking-wider text-forest shadow-md border border-white/40">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                    Taking new students
-                  </span>
-                </div>
-                <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/85 backdrop-blur-md border border-white/60 shadow-lg text-forest">
+                <div className="absolute bottom-6 left-6 right-6 z-10 p-4 rounded-2xl bg-white/85 backdrop-blur-md border border-white/60 shadow-lg text-forest">
                   <p className="font-serif text-base text-forest">
                     Your first class is free.
                   </p>
                   <p className="mt-1 text-xs text-sage-muted">
-                    Online or in person. Message on WhatsApp to pick a time.
+                    Online and In-Person. Message on WhatsApp to pick a time.
                   </p>
+                </div>
+                </div>
+                <div className="absolute top-6 right-6 z-20">
+                  <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-xs font-semibold tracking-wider text-forest shadow-md border-2 border-white whitespace-nowrap">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+                    Taking new students
+                  </span>
                 </div>
               </div>
             </div>
@@ -106,7 +108,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12" id="who">
+      <section className="py-12 max-w-7xl mx-auto px-6 lg:px-12" id="who">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-semibold tracking-widest text-terracotta uppercase">
             Who it&apos;s for
@@ -146,7 +148,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-24 bg-sand-100 border-t border-[#212B24]/10">
+      <section className="py-12 bg-sand-100 border-t border-[#212B24]/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
@@ -154,7 +156,7 @@ export default function HomePage() {
                 Classes
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-forest mt-2">
-                Online or in person
+                Online and In-Person
               </h2>
             </div>
             <Link

@@ -6,16 +6,16 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Book a Free Trial Class in Loni, Ghaziabad · Lakshya Dhama",
+    absolute: "Book a Free Trial Class in Delhi | NCR · Lakshya Studios",
   },
   description:
-    "Book a free trial yoga or strength class with Lakshya Dhama in Loni, Ghaziabad. WhatsApp, call, or send an enquiry.",
+    "Book a free trial yoga or strength class at Lakshya Studios with Lakshya Dhama in Delhi | NCR. WhatsApp, call, or send an enquiry.",
   alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
   return (
-    <section className="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="py-12 max-w-7xl mx-auto px-6 lg:px-12">
       <div className="bg-sand-50 rounded-3xl border border-forest/15 p-8 sm:p-12 lg:p-16 shadow-soft-elevation">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5 space-y-6">

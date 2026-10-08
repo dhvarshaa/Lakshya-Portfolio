@@ -1,21 +1,15 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { MobileActionBar } from "@/components/MobileActionBar";
 import { getSiteUrl, site } from "@/lib/site";
 import "./globals.css";
 
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
@@ -30,15 +24,15 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   keywords: [
-    "yoga classes Loni",
-    "yoga Ghaziabad",
+    "yoga classes Delhi",
+    "yoga NCR",
     "yoga instructor near me",
-    "personal trainer Loni",
+    "personal trainer Delhi",
     "online yoga India",
-    "MDNIY yoga",
+    "Lakshya Studios",
     "Lakshya Dhama",
   ],
-  authors: [{ name: site.name }],
+  authors: [{ name: site.founder }],
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -65,7 +59,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakarta.variable} ${playfair.variable} h-full scroll-smooth`}
+      className={`${poppins.variable} h-full scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-limewash antialiased pb-20 md:pb-0">
         <Header />

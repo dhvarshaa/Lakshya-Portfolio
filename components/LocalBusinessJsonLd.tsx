@@ -7,6 +7,10 @@ export function LocalBusinessJsonLd() {
     "@context": "https://schema.org",
     "@type": "YogaStudio",
     name: site.name,
+    founder: {
+      "@type": "Person",
+      name: site.founder,
+    },
     description: site.description,
     url,
     telephone: site.phoneE164,
@@ -14,15 +18,13 @@ export function LocalBusinessJsonLd() {
     image: `${url}/images/lakshya-hero.jpg`,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Behta Hajipur",
       addressLocality: site.locality,
       addressRegion: site.region,
-      postalCode: site.postalCode,
       addressCountry: site.country,
     },
     areaServed: [
-      { "@type": "City", name: "Loni" },
-      { "@type": "City", name: "Ghaziabad" },
+      { "@type": "City", name: "Delhi" },
+      { "@type": "AdministrativeArea", name: "National Capital Region" },
       { "@type": "Country", name: "India" },
     ],
     sameAs: site.instagramUrl ? [site.instagramUrl] : undefined,

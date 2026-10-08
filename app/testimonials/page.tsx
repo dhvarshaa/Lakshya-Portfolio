@@ -5,10 +5,10 @@ import { testimonials } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Student Testimonials · Lakshya Dhama · Loni, Ghaziabad",
+    absolute: "Student Testimonials · Lakshya Studios · Delhi | NCR",
   },
   description:
-    "What students say about yoga and strength training with Lakshya Dhama in Loni, Ghaziabad.",
+    "What students say about yoga and strength training at Lakshya Studios with Lakshya Dhama in Delhi | NCR.",
   alternates: { canonical: "/testimonials" },
 };
 

@@ -1,20 +1,22 @@
 export const site = {
-  name: "Lakshya Dhama",
-  tagline: "Yoga & Strength",
-  title: "Lakshya Dhama — Yoga & Strength Classes in Loni, Ghaziabad",
+  name: "Lakshya Studios",
+  founder: "Lakshya Dhama",
+  byline: "by Lakshya Dhama",
+  tagline: "Move · Breathe · Grow",
+  title:
+    "Lakshya Studios by Lakshya Dhama — Yoga & Strength Classes in Delhi | NCR",
   description:
-    "MDNIY-certified yoga instructor and personal trainer in Loni, Ghaziabad. In-person and online yoga and strength classes for weight loss, muscle gain, and flexibility. Book a free trial class.",
-  area: "Loni, Ghaziabad",
-  addressLine: "Behta Hajipur, Loni, Ghaziabad, Uttar Pradesh",
-  locality: "Loni",
-  region: "Uttar Pradesh",
-  postalCode: "201102",
+    "Lakshya Studios by Lakshya Dhama, a yoga instructor and personal trainer in Delhi | NCR. In-person and online yoga and strength classes for weight loss, muscle gain, and flexibility. Book a free trial class.",
+  area: "Delhi | NCR",
+  addressLine: "Delhi | NCR",
+  locality: "Delhi",
+  region: "Delhi",
   country: "IN",
   phoneDisplay: "+91 99710 79088",
   phoneE164: "+919971079088",
   phoneWhatsApp: "919971079088",
   email: "lakshaydh2017@gmail.com",
-  instagramUrl: null as string | null,
+  instagramUrl: "https://www.instagram.com/yogawith_lakshaydhama/",
   trialMessage: "Hi Lakshya, I'd like to book a free trial class.",
 } as const;
 
